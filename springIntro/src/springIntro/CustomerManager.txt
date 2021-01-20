@@ -1,0 +1,17 @@
+package springIntro;
+
+public class CustomerManager {
+
+	// Dependency Injection ( TASARIM IoC)
+	private ICustomerDal customerDal;
+
+	public CustomerManager(ICustomerDal customerDal) {
+		this.customerDal = customerDal;
+	}
+
+	public void add() {
+		// iþ kurallarý
+		customerDal.add();
+	}
+
+}
